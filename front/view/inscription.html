@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang=fr>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../design/style/default.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Inscription</title>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="TPL_INSCRIPTION">
+        <h1>Inscription</h1>
+        <div class="form">
+            <label for="email">Adresse mail</label>
+            <input type="email" name="email" id="email" required/>
+            <br />
+            <label for="pseudo">Pseudo</label>
+            <input type="text" name="pseudo" id="pseudo" required/>
+            <br />
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password" required/>
+            <br />
+            <label for="confirmPassword">Vérification mot de passe</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" required/>
+            <div id="erreur"></div>
+            <br>
+            <div class="validation">
+                <input type="checkbox" name="rgpd" id="rgpd" required="true"/>
+                <label for="rgpd">J'ai lu et j'accepte les <a href="#">Conditions Générales d'Utilisation</a> et la <a href="#">Politique de Protection des Données Personnelles.</a></label><br />
+            </div>
+            <span class="envoyer">
+                    <button onclick="verifierConnexion()">s'inscrire</button>
+                </span>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../controler/inscription.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../controler/integrationHeaderFooter.js"></script>
+</body>
+</html>

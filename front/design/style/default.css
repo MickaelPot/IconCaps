@@ -1,0 +1,20 @@
+/* IMMPORTATION DES FICHIERS CSS */
+@import "header.css";
+@import "formulaire.css";
+@import "fonts.css";
+@import "bandeau_haut.css";
+@import "bandeau_haut_connecte.css";
+@import "bandeau_bas.css";
+@import "accueil.css";
+@import "recherche.css";
+@import "fiche.css";
+@import "profile.css";
+@import "modification_profile.css";
+@import "chat.css";
+@import "messagerie.css";
+
+/* Règles de base */
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+}

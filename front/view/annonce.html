@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang=fr>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../design/style/default.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../controler/painterro-1.2.73.min.js"></script>
+    <title>Poster une annonce</title>
+</head>
+<body>
+<div id="header"></div>
+<div class="TPL_ANNONCE" id ="main">
+    <h1>Ajouter une annonce</h1>
+    <div class="wrapper">
+        <div class="image">
+            <label for="image">Ajouter l'image de votre annonce</label>
+            <button id="createNft">Créer/charger son NFT</button>
+            <div id="editeur"></div>
+        </div>
+        <div class="description">
+            <label for="description">Titre - Décrivez votre oeuvre d'art</label>
+            <textarea id='description' rows=5 cols=40 placeholder="Saisissez votre description"></textarea>
+        </div>
+        <div class="prix">
+            <label for="prix">Prix</label>
+            <input id='prix' type="number" placeholder="0,00 €" min="0"/>
+        </div>
+    </div>
+    <div class="valider">
+        <button onclick="sendNft()">Publier mon annonce</button>
+    </div>
+
+    <!-- AJOUT DE CODE PDF-->
+    <div id="pdf" hidden>
+
+        <h1>Certificat NFT</h1>
+        <span id="country">...</span>
+        <img id="nft"/>
+        <div id="qrcode"></div>
+    </div>
+
+    <!-- FiN DE CODE PDF-->
+
+
+</div>
+<div id="footer"></div>
+<script src="../controler/html2pdf.bundle.min.js"></script>
+<script src="../controler/qrcode.min.js"></script>
+<script src="../controler/country.js"></script>
+<script src="../controler/text.js"></script>
+<script src="../controler/nft.js"></script>
+<script src="../controler/integrationHeaderFooter.js"></script>
+<script src="../controler/deconnexion.js"></script>
+</body>

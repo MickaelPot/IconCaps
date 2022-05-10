@@ -1,0 +1,25 @@
+/* Variables de couleur */
+.TPL_BANDEAU_HAUT_CONNECTE .utilisateur {
+  display: flex;
+  align-items: center;
+}
+.TPL_BANDEAU_HAUT_CONNECTE .utilisateur a {
+  margin-right: 15px;
+}
+.TPL_BANDEAU_HAUT_CONNECTE .utilisateur .messages, .TPL_BANDEAU_HAUT_CONNECTE .utilisateur .favoris {
+  max-height: 30px;
+}
+.TPL_BANDEAU_HAUT_CONNECTE .utilisateur .profil {
+  max-height: 45px;
+  border-radius: 50px;
+}
+.TPL_BANDEAU_HAUT_CONNECTE .utilisateur button {
+  background: #F65149;
+  color: #fff;
+}
+.TPL_BANDEAU_HAUT_CONNECTE .utilisateur button:hover {
+  background: #fff;
+  color: #F65149;
+}
+
+/*# sourceMappingURL=bandeau_haut_connecte.css.map */

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang=fr>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../design/style/default.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Fiche image</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="TPL_FICHE" id="main">
+        <div class="img">
+            <img id="img" src="" alt="">
+        </div>
+        <div class="infos">
+            <div class="wrapper">
+                <div class="infos_importantes">
+                    <div id='prix'></div> <!-- MODIFIE -->
+                    <div class="favoris">❤️<span id="nbFavoris">589</span></div>
+                </div>
+                <div id="description">
+                    Thanos version beau bougre 🔥
+                    <p>Vendeur:<span id="pseudo">SasukeSteak</span><span id="imageUser"><img
+                                src="../design/img/users/user2.jpg" alt=""></span></p>
+                </div>
+                <div class="boutons">
+                    <a href='javascript:;' onclick="chatConnexion()" class="sendMesage">
+                        <button >Envoyer un message</button> <!-- // pouvoir transferer un user via le session storage ou jsp -->
+                    </a>
+                    <span class="buy">
+                        <button onclick="achat()">Acheter</button>
+                    </span>
+                    <a href="" class="addFav">
+                        <button>❤️Favoris</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pdf" hidden>
+        <h1 style="text-align: center;" >Certificat NFT</h1>
+        <p>Ce NFT à été créé en : <span style="text-align: center;" id="country">...</span><p></p>
+        <div class="img">
+            <img id="nft"/>
+        </div>
+        <div id="qrcode" style="text-align: center;"></div>
+    </div>
+    <div id="footer"></div>
+    <script src="../controler/html2pdf.bundle.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../controler/integrationHeaderFooter.js"></script>
+    <script src="../controler/deconnexion.js"></script>
+    <script src="../controler/fiche.js"></script>
+    <script src="../controler/qrcode.min.js"></script>
+    <script src="../controler/country.js"></script>
+
+</body>
+
+</html>

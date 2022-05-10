@@ -1,0 +1,30 @@
+/* Variables de couleur */
+$red: #F65149;
+
+.TPL_BANDEAU_HAUT_CONNECTE {
+    .utilisateur {
+        display: flex;
+        align-items: center;
+
+        a {
+            margin-right: 15px;
+        }
+        .messages, .favoris {
+            max-height: 30px;
+        }
+        .profil {
+            max-height: 45px;
+            border-radius: 50px;
+        }
+
+        button {
+            background: $red;
+            color: #fff;
+
+            &:hover {
+                background: #fff;
+                color: $red;
+            }
+        }
+    }
+}

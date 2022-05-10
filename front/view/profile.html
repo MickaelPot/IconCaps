@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang=fr>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../design/style/default.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Page de profil</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="TPL_PROFIL">
+        <h1>Mon profil</h1>
+        <div class="infos">
+            <div class="infos_haut">
+                <img id="avatar" src="../design/img/sinje.jpg" alt="">
+                <div class="nom">
+                    <p id="pseudo">Sinje</p>
+                    <p class="nbImages"><span id="imgVendues">4</span> images vendues</p>
+                </div>
+            </div>
+            <div class="infos_description">
+                <p>À propos : <span id='description'></span></p>
+            </div>
+            <div class="modifier">
+                <a href="http://localhost/projetNode/front/view/modification_profile.html">
+                    <button>✏️Modifier mon profil</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../controler/integrationHeaderFooter.js"></script>
+    <script src="../controler/profile.js"></script>
+    <script src="../controler/deconnexion.js"></script>
+</body>
+
+</html>

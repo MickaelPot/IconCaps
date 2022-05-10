@@ -1,0 +1,102 @@
+/* Variables de couleur */
+$gris: #707070;
+$gris_2: #F5F6F7;
+$red: #F65149;
+
+.TPL_CHAT {
+    margin: 60px auto;
+    max-width: 800px;
+
+    .userProfile {
+        background: $red;
+        border-radius: 6px 6px 0 0;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #imgUser {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 60px;
+            margin-right: 10px;
+        }
+
+        #pseudoUser {
+            font-weight: 600;
+            font-size: 24px;
+            color: #fff;
+        }
+    }
+
+    #chat {
+        position: relative;
+        height: 400px;
+        overflow: auto;
+        border: 1px solid #000;
+        border-radius: 0 0 6px 6px;
+        border-top: none;
+
+        .messageUser, .messageMe {
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            width: 400px;
+
+            p {
+                font-weight: 500;
+            }
+        }
+
+        .messageUser {
+            background: $red;
+            margin-left: 15px;
+
+            p {
+                color: #fff;
+            }
+        }
+
+        .messageMe {
+            background: $gris_2;
+            margin-left: 325px;
+
+            p {
+                text-align: right;
+            }
+        }
+    }
+
+    .sendMessage {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+
+        textarea {
+            font-family: Montserrat, sans-serif;
+            padding: 10px;
+            width: 400px;
+            margin-right: 10px;
+            border-radius: 6px;
+        }
+
+        button {
+            font-family: Montserrat, sans-serif;
+            padding: 10px 30px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 700;
+            background: #fff;
+            color: $red;
+            border: 2px solid $red;
+            transition: all 0.3s;
+
+            &:hover {
+                cursor: pointer;
+                background: $red;
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+/* Variables de couleur */
+.TPL_BANDEAU_HAUT, .TPL_BANDEAU_HAUT_CONNECTE {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #707070;
+  padding: 10px 0;
+}
+.TPL_BANDEAU_HAUT img, .TPL_BANDEAU_HAUT_CONNECTE img {
+  max-width: 250px;
+}
+.TPL_BANDEAU_HAUT #searchbar input, .TPL_BANDEAU_HAUT_CONNECTE #searchbar input {
+  font-family: Montserrat, sans-serif;
+  background: #F5F6F7;
+  width: 600px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  padding-left: 20px;
+}
+.TPL_BANDEAU_HAUT button, .TPL_BANDEAU_HAUT_CONNECTE button {
+  font-family: Montserrat, sans-serif;
+  height: 45px;
+  background: #fff;
+  border: 2px solid #F65149;
+  border-radius: 6px;
+  color: #F65149;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: all 0.3s;
+}
+.TPL_BANDEAU_HAUT button:hover, .TPL_BANDEAU_HAUT_CONNECTE button:hover {
+  cursor: pointer;
+  background: #F65149;
+  color: #fff;
+}
+
+/*# sourceMappingURL=bandeau_haut.css.map */

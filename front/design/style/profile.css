@@ -1,0 +1,83 @@
+/* Variables de couleur */
+.TPL_PROFIL {
+  max-width: 800px;
+  margin: 60px auto;
+}
+.TPL_PROFIL h1 {
+  text-align: center;
+  position: relative;
+  color: #F65149;
+  font-size: 35px;
+  margin-bottom: 80px;
+}
+.TPL_PROFIL h1::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background: #F65149;
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+}
+.TPL_PROFIL .infos {
+  display: flex;
+  flex-direction: column;
+}
+.TPL_PROFIL .infos .infos_haut {
+  display: flex;
+  align-items: center;
+  margin: 0 auto 30px;
+}
+.TPL_PROFIL .infos .infos_haut img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+.TPL_PROFIL .infos .infos_haut .nom {
+  margin-left: 25px;
+  color: #F65149;
+}
+.TPL_PROFIL .infos .infos_haut .nom p {
+  margin: 0;
+}
+.TPL_PROFIL .infos .infos_haut .nom #pseudo {
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+.TPL_PROFIL .infos .infos_haut .nom .nbImages {
+  font-size: 20px;
+}
+.TPL_PROFIL .infos .infos_description {
+  margin: 0 auto 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #F65149;
+}
+.TPL_PROFIL .infos .infos_description #description {
+  font-weight: 300;
+  color: #000;
+}
+.TPL_PROFIL .infos .modifier {
+  margin: 0 auto;
+}
+.TPL_PROFIL .infos .modifier button {
+  font-family: Montserrat, sans-serif;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  background: #fff;
+  color: #F65149;
+  border: 2px solid #F65149;
+  transition: all 0.3s;
+}
+.TPL_PROFIL .infos .modifier button:hover {
+  cursor: pointer;
+  background: #F65149;
+  color: #fff;
+}
+
+/*# sourceMappingURL=profile.css.map */

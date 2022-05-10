@@ -1,0 +1,102 @@
+/* Variables de couleur */
+.TPL_FICHE {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 60px auto;
+  max-width: 800px;
+  width: 100%;
+}
+.TPL_FICHE .img img {
+  width: 350px;
+  object-fit: cover;
+}
+.TPL_FICHE .infos {
+  width: 270px;
+  height: auto;
+  background: #F5F6F7;
+  padding: 60px 40px;
+}
+.TPL_FICHE .infos .wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.TPL_FICHE .infos .infos_importantes {
+  margin-bottom: 30px;
+}
+.TPL_FICHE .infos .infos_importantes #prix {
+  font-weight: 700;
+  font-size: 46px;
+}
+.TPL_FICHE .infos .infos_importantes .favoris {
+  font-weight: 300;
+}
+.TPL_FICHE .infos #description {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.TPL_FICHE .infos #description p {
+  margin-top: 5px;
+  font-weight: 300;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.TPL_FICHE .infos #description p #imageUser img {
+  display: flex;
+  margin-left: 3px;
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+.TPL_FICHE .infos .boutons {
+  display: flex;
+  flex-direction: column;
+}
+.TPL_FICHE .infos .boutons a {
+  margin-bottom: 15px;
+}
+.TPL_FICHE .infos .boutons a:last-child {
+  margin-bottom: 0;
+}
+.TPL_FICHE .infos .boutons button {
+  width: 100%;
+  font-family: Montserrat, sans-serif;
+  padding: 15px 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+.TPL_FICHE .infos .boutons button:hover {
+  cursor: pointer;
+}
+.TPL_FICHE .infos .boutons .sendMesage button {
+  background: #fff;
+  color: #F65149;
+  border: 2px solid #F65149;
+}
+.TPL_FICHE .infos .boutons .sendMesage button:hover {
+  background: #F65149;
+  color: #fff;
+}
+.TPL_FICHE .infos .boutons .buy button {
+  background: #F65149;
+  color: #fff;
+  border: 2px solid #F65149;
+}
+.TPL_FICHE .infos .boutons .buy button:hover {
+  background: #fff;
+  color: #F65149;
+}
+.TPL_FICHE .infos .boutons .addFav button {
+  background: #fff;
+  border: 2px solid #F5F6F7;
+}
+.TPL_FICHE .infos .boutons .addFav button:hover {
+  color: #F65149;
+  border-color: #F65149;
+}
+
+/*# sourceMappingURL=fiche.css.map */

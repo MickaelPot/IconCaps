@@ -1,0 +1,93 @@
+/* Variables de couleur */
+$gris: #707070;
+$gris_2: #F5F6F7;
+$red: #F65149;
+
+.TPL_MODIFICATION, .TPL_ANNONCE {
+    margin: 60px auto;
+    max-width: 800px;
+
+    h1 {
+        margin-bottom: 60px;
+        position: relative;
+        color: $red;
+
+        &::after {
+            content: "";
+            width: 80px;
+            height: 2px;
+            background: $red;
+            position: absolute;
+            left: 5%;
+            bottom: -15px;
+            transform: translateX(-50%);
+        }
+    }
+
+    .wrapper div {
+        padding: 40px;
+        background: $gris_2;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 6px;
+
+        &:last-child {
+            margin-bottom: 50px;
+        }
+
+        label, p {
+            font-weight: 500;
+        }
+
+        input, textarea {
+            font-family: Montserrat, sans-serif;
+            border: none;
+            border-radius: 6px;
+            max-width: 300px;
+            width: 100%;
+            padding: 10px;
+        }
+
+        &.password .changePassword {
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            max-width: 300px;
+            width: 100%;
+
+            input {
+                margin-bottom: 15px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .valider {
+        display: flex;
+        justify-content: center;
+
+        button {
+            font-family: Montserrat, sans-serif;
+            padding: 15px 25px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 700;
+            background: #fff;
+            color: $red;
+            border: 2px solid $red;
+            transition: all 0.3s;
+
+            &:hover {
+                cursor: pointer;
+                background: $red;
+                color: #fff;
+            }
+        }
+    }
+}

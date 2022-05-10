@@ -1,0 +1,76 @@
+/* Variables de couleur */
+.TPL_BANDEAU_BAS {
+  max-width: 1100px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.TPL_BANDEAU_BAS .logoBas img {
+  width: 350px;
+}
+.TPL_BANDEAU_BAS .reseaux {
+  margin-top: 10px;
+}
+.TPL_BANDEAU_BAS .reseaux ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+.TPL_BANDEAU_BAS .reseaux ul li {
+  width: 30px;
+  position: relative;
+  height: 29px;
+  margin: 0 15px;
+  padding: 10px;
+  border: 2px solid #F65149;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+.TPL_BANDEAU_BAS .reseaux ul li img {
+  height: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.TPL_BANDEAU_BAS .reseaux ul li:hover {
+  cursor: pointer;
+  background: #F65149;
+}
+.TPL_BANDEAU_BAS .liensBas {
+  margin-top: 15px;
+}
+.TPL_BANDEAU_BAS .liensBas ul {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+}
+.TPL_BANDEAU_BAS .liensBas ul li {
+  margin-right: 20px;
+}
+.TPL_BANDEAU_BAS .liensBas ul li a {
+  color: #000;
+  text-decoration: none;
+}
+.TPL_BANDEAU_BAS .liensBas ul li a:hover {
+  text-decoration: underline;
+}
+.TPL_BANDEAU_BAS .liensBas ul li .teamName {
+  color: #F65149;
+  font-weight: 700;
+}
+.TPL_BANDEAU_BAS .liensBas ul li:last-child {
+  margin-right: 0;
+}
+.TPL_BANDEAU_BAS .liensBas ul li:last-child::after {
+  content: none;
+}
+.TPL_BANDEAU_BAS .liensBas ul li::after {
+  content: "|";
+  padding-left: 20px;
+}
+
+/*# sourceMappingURL=bandeau_bas.css.map */

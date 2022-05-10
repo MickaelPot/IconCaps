@@ -1,0 +1,93 @@
+/* Variables de couleur */
+$red: #F65149;
+
+.TPL_BANDEAU_BAS {
+    max-width: 1100px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logoBas {
+        img {
+            width: 350px;
+        }
+    }
+
+    .reseaux {
+        margin-top: 10px;
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            padding: 0;
+
+            li {
+                width: 30px;
+                position: relative;
+                height: 29px;
+                margin: 0 15px;
+                padding: 10px;
+                border: 2px solid $red;
+                border-radius: 50px;
+                transition: all 0.3s;
+
+                img {
+                    height: 25px;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    background: $red;
+                }
+            }
+        }
+    }
+
+    .liensBas {
+        margin-top: 15px;
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            padding-left: 0;
+
+            li {
+                margin-right: 20px;
+
+                a {
+                    color: #000;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                .teamName {
+                    color: $red;
+                    font-weight: 700;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+
+                    &::after {
+                        content: none;
+                    }
+                }
+
+                &::after {
+                    content: "|";
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+}

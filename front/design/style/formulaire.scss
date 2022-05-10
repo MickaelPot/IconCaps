@@ -1,0 +1,101 @@
+/* Variables de couleur */
+$red: #F65149;
+
+.TPL_INSCRIPTION, .TPL_CONNEXION {
+    font-family: Montserrat, sans-serif;
+    max-width: 500px;
+    margin: 60px auto;
+
+    a {
+        color: $red;
+    }
+
+    h1 {
+        text-align: center;
+        position: relative;
+        color: $red;
+        font-size: 35px;
+
+        &::after {
+            content: "";
+            width: 100px;
+            height: 2px;
+            background: $red;
+            position: absolute;
+            left: 50%;
+            bottom: -15px;
+            transform: translateX(-50%);
+        }
+    }
+
+    .form {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-bottom: 5px;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        input {
+            font-family: Montserrat, sans-serif;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            font-size: 18px;
+            height: 50px;
+            border-color: $red;
+        }
+
+        .validation {
+            display: flex;
+            align-items: center;
+
+            input {
+                width: 40px;
+                margin-right: 10px;
+            }
+
+            label {
+                font-weight: normal;
+
+                a {
+                    color: $red;
+                }
+            }
+        }
+
+        .envoyer {
+            margin: 35px auto 0;
+
+            button {
+                padding: 15px 25px;
+                font-family: Montserrat, sans-serif;
+                margin-bottom: 0;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 1px;
+                font-size: 20px;
+                color: #fff;
+                background: $red;
+                border: 2px solid $red;
+                border-radius: 6px;
+                transition: all 0.3s;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    cursor: pointer;
+                    background: #fff;
+                    color: $red;
+                }
+            }
+        }
+
+        .inscription {
+            text-align: center;
+            margin-top: 25px;
+        }
+    }
+}

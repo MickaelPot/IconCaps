@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang=fr>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../design/style/default.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Modification du profil</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="TPL_MODIFICATION">
+        <h1>Modification de profil</h1>
+        <div class="wrapper">
+            <div class="image">
+                <label for="image">Image de profil</label>
+                <input id='image' type="file" />
+            </div>
+            <div class="description">
+                <label for="Description">Description</label>
+                <textarea id="Description" rows=5 cols=40 placeholder="Changer ma description"></textarea>
+            </div>
+            <div class="password">
+                <p>Mot de passe</p>
+                <div class="changePassword">
+                    <input type="password" placeholder="Ancien mot de passe">
+                    <input type="password" placeholder="Nouveau mot de passe">
+                    <input type="password" placeholder="Confirmation du nouveau mot de pase">
+                </div>
+            </div>
+        </div>
+        <div class="valider">
+            <button onclick="modifieProfil()">Modifier mon profil</button>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../controler/modifieProfil.js"></script>
+    <script src="../controler/integrationHeaderFooter.js"></script>
+    <script src="../controler/deconnexion.js"></script>
+</body>
+
+</html>

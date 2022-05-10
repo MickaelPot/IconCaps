@@ -1,0 +1,126 @@
+/* Variables de couleur */
+$gris: #707070;
+$gris_2: #F5F6F7;
+$red: #F65149;
+
+.TPL_FICHE {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px auto;
+    max-width: 800px;
+    width: 100%;
+
+    .img {
+        img {
+            width: 350px;
+            object-fit: cover;
+        }
+    }
+
+    .infos {
+        width: 270px;
+        height: auto;
+        background: $gris_2;
+        padding: 60px 40px;
+
+        .wrapper {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .infos_importantes {
+            margin-bottom: 30px;
+
+            #prix {
+                font-weight: 700;
+                font-size: 46px;
+            }
+
+            .favoris {
+                font-weight: 300;
+            }
+        }
+
+        #description {
+            font-weight: 600;
+            margin-bottom: 30px;
+
+            p {
+                margin-top: 5px;
+                font-weight: 300;
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+
+                #imageUser img {
+                    display: flex;
+                    margin-left: 3px;
+                    width: 20px;
+                    height: 20px;
+                    object-fit: cover;
+                    border-radius: 50px;
+                }
+            }
+        }
+
+        .boutons {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                margin-bottom: 15px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            button {
+                width: 100%;
+                font-family: Montserrat, sans-serif;
+                padding: 15px 10px;
+                border-radius: 6px;
+                font-size: 16px;
+                font-weight: 700;
+                transition: all 0.3s;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .sendMesage button {
+                background: #fff;
+                color: $red;
+                border: 2px solid $red;
+
+                &:hover {
+                    background: $red;
+                    color: #fff;
+                }
+            }
+
+            .buy button {
+                background: $red;
+                color: #fff;
+                border: 2px solid $red;
+
+                &:hover {
+                    background: #fff;
+                    color: $red;
+                }
+            }
+
+            .addFav button {
+                background: #fff;
+                border: 2px solid $gris_2;
+
+                &:hover {
+                    color: $red;
+                    border-color: $red;
+                }
+            }
+        }
+    }
+}

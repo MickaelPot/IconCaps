@@ -1,0 +1,111 @@
+/* Variables de couleur */
+.accueil {
+  margin-bottom: 50px;
+}
+.accueil .bandeau {
+  background-image: url("../img/bandeauAccueil.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+.accueil .bandeau .infos {
+  position: absolute;
+  top: 50%;
+  width: 300px;
+  margin-left: 150px;
+  padding: 40px 25px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  transform: translateY(-50%);
+}
+.accueil .bandeau .infos h1 {
+  margin: 0;
+  font-weight: 500;
+}
+.accueil .bandeau .infos .btn_vendre {
+  margin: 25px 0 15px;
+}
+.accueil .bandeau .infos .btn_vendre button {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  width: 100%;
+  padding: 12px 0;
+  color: #fff;
+  background: #F65149;
+  border: 2px solid #F65149;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.accueil .bandeau .infos .btn_vendre button:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #F65149;
+}
+.accueil .bandeau .infos .lien_fonctionnement {
+  text-decoration: none;
+  color: #F65149;
+  font-size: 14px;
+}
+.accueil .bandeau .infos .lien_fonctionnement:hover {
+  text-decoration: underline;
+}
+.accueil .liste {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.accueil .liste h2 {
+  font-weight: 500;
+  font-size: 34px;
+  margin-top: 60px;
+}
+.accueil .liste ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.accueil .liste ul li {
+  overflow: hidden;
+  position: relative;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.accueil .liste ul li .imageListe {
+  overflow: hidden;
+  display: flex;
+}
+.accueil .liste ul li .imageListe img {
+  width: 220px;
+  height: 300px;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+.accueil .liste ul li:hover img {
+  transform: scale(1.05);
+}
+.accueil .liste ul li .infos {
+  display: flex;
+  justify-content: space-between;
+}
+.accueil .liste ul li .infos p {
+  font-size: 18px;
+}
+.accueil .liste ul li .infos .prix {
+  margin: 10px 0 0 10px;
+  font-weight: 600;
+}
+.accueil .liste ul li .infos .favoris {
+  margin-top: 7px;
+}
+.accueil .liste ul li a {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+/*# sourceMappingURL=accueil.css.map */

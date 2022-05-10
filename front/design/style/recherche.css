@@ -1,0 +1,97 @@
+/* Variables de couleur */
+.TPL_RECHERCHE {
+  max-width: 1000px;
+  margin: 30px auto;
+}
+.TPL_RECHERCHE .infosRecherche {
+  display: flex;
+  align-items: center;
+  color: #F65149;
+  margin-bottom: 50px;
+}
+.TPL_RECHERCHE .infosRecherche h1 {
+  margin: 0 15px 0 0;
+  position: relative;
+}
+.TPL_RECHERCHE .infosRecherche h1::after {
+  content: "";
+  width: 80px;
+  height: 2px;
+  background: #F65149;
+  position: absolute;
+  left: 33%;
+  bottom: -15px;
+  transform: translateX(-50%);
+}
+.TPL_RECHERCHE .infosRecherche p {
+  margin-top: 22px;
+}
+.TPL_RECHERCHE .liste ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.TPL_RECHERCHE .liste ul li {
+  overflow: hidden;
+  position: relative;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+.TPL_RECHERCHE .liste ul li .utilisateur {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.TPL_RECHERCHE .liste ul li .utilisateur img {
+  height: 25px;
+  width: 25px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+.TPL_RECHERCHE .liste ul li .utilisateur span {
+  font-size: 12px;
+  font-weight: 300;
+}
+.TPL_RECHERCHE .liste ul li .imageListe {
+  overflow: hidden;
+  display: flex;
+}
+.TPL_RECHERCHE .liste ul li .imageListe img {
+  width: 220px;
+  height: 300px;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+.TPL_RECHERCHE .liste ul li:hover .imageListe img {
+  transform: scale(1.05);
+}
+.TPL_RECHERCHE .liste ul li .infos {
+  max-width: 220px;
+}
+.TPL_RECHERCHE .liste ul li .infos .infos_haut {
+  display: flex;
+  justify-content: space-between;
+}
+.TPL_RECHERCHE .liste ul li .infos .infos_haut p {
+  font-size: 18px;
+}
+.TPL_RECHERCHE .liste ul li .infos .infos_haut .prix {
+  margin: 10px 0 0 10px;
+  font-weight: 600;
+}
+.TPL_RECHERCHE .liste ul li .infos .infos_haut .favoris {
+  margin: 7px 0 10px;
+}
+.TPL_RECHERCHE .liste ul li .infos .description {
+  margin-left: 10px;
+  font-size: 14px;
+}
+.TPL_RECHERCHE .liste ul li a {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+/*# sourceMappingURL=recherche.css.map */

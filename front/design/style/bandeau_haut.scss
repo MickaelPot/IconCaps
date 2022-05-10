@@ -1,0 +1,47 @@
+/* Variables de couleur */
+$gris: #707070;
+$gris_2: #F5F6F7;
+$red: #F65149;
+
+.TPL_BANDEAU_HAUT, .TPL_BANDEAU_HAUT_CONNECTE {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid $gris;
+    padding: 10px 0;
+
+    img {
+        max-width: 250px;
+    }
+
+    #searchbar {
+        input {
+            font-family: Montserrat, sans-serif;
+            background: $gris_2;
+            width: 600px;
+            height: 40px;
+            border: none;
+            border-radius: 4px;
+            padding-left: 20px;
+        }
+    }
+
+    button {
+        font-family: Montserrat, sans-serif;
+        height: 45px;
+        background: #fff;
+        border: 2px solid $red;
+        border-radius: 6px;
+        color: $red;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 5px 10px;
+        transition: all 0.3s;
+
+        &:hover {
+            cursor: pointer;
+            background: $red;
+            color: #fff;
+        }
+    }
+}

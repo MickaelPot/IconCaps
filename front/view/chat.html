@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang=fr>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../design/style/default.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Poster une annonce</title>
+</head>
+
+
+<body>
+
+    <div id="header"></div>
+    <div class="TPL_CHAT">
+        <div class="userProfile">
+            <img id='imgUser' src="../design/img/sinje.jpg" alt="">
+            <div id="pseudoUser">Sinje</div>
+        </div>
+        <div id="chat">
+        </div>
+        <div class="sendMessage">
+            <textarea id="message" placeholder="Rentrez votre message"></textarea>
+            <button onclick="send()">Envoyer</button>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../controler/integrationHeaderFooter.js"></script>
+    <script src="../controler/deconnexion.js"></script>
+    <script src="../../node_modules/socket.io/client-dist/socket.io.js"></script>
+    <script src="../controler/chat.js"></script>
+</body>
+
+</html>

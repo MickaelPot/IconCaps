@@ -1,0 +1,38 @@
+<div class="TPL_BANDEAU_HAUT_CONNECTE">
+    <a href="http://localhost/projetNode/front/view/index.html">
+        <img src="http://localhost/projetNode/front/design/img/logo.png" alt="">
+    </a>
+    <div id="searchbar">
+        <form action="" class="formulaire">
+            <input class="champ" type="text" placeholder="Rechercher des images"/>
+        </form>
+    </div>
+    <div class="utilisateur">
+        <a href="http://localhost/projetNode/front/view/messagerie.html?eraseCache=true" id="messagerie">
+            <img class="messages" src="../../front/design/img/enveloppe.png" alt="">
+        </a>
+        <a href="">
+            <img class='favoris' src="../../front/design/img/coeur.png" alt="">
+        </a>
+        <a href="http://localhost/projetNode/front/view/profile.html">
+            <img class='profil' id="test" src="../../front/design/img/sinje.jpg" alt="">
+        </a>
+        <a href="http://localhost/projetNode/front/view/annonce.html">
+            <button>
+                Poster une annonce
+            </button>
+        </a>
+        
+        <button onclick="deconnexion()">Déconnexion</button>
+    </div>
+</div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    const avatarHaut= document.getElementById("test");
+    if (sessionStorage.getItem("avatar") != "") {
+        avatarHaut.src=sessionStorage.getItem("avatar");
+    }else{
+        avatarHaut.src="../../front/design/img/default-avatar.jpg";
+    }
+</script>

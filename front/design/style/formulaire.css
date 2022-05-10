@@ -1,0 +1,85 @@
+/* Variables de couleur */
+.TPL_INSCRIPTION, .TPL_CONNEXION {
+  font-family: Montserrat, sans-serif;
+  max-width: 500px;
+  margin: 60px auto;
+}
+.TPL_INSCRIPTION a, .TPL_CONNEXION a {
+  color: #F65149;
+}
+.TPL_INSCRIPTION h1, .TPL_CONNEXION h1 {
+  text-align: center;
+  position: relative;
+  color: #F65149;
+  font-size: 35px;
+}
+.TPL_INSCRIPTION h1::after, .TPL_CONNEXION h1::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background: #F65149;
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+}
+.TPL_INSCRIPTION .form, .TPL_CONNEXION .form {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.TPL_INSCRIPTION .form label, .TPL_CONNEXION .form label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.TPL_INSCRIPTION .form input, .TPL_CONNEXION .form input {
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  font-size: 18px;
+  height: 50px;
+  border-color: #F65149;
+}
+.TPL_INSCRIPTION .form .validation, .TPL_CONNEXION .form .validation {
+  display: flex;
+  align-items: center;
+}
+.TPL_INSCRIPTION .form .validation input, .TPL_CONNEXION .form .validation input {
+  width: 40px;
+  margin-right: 10px;
+}
+.TPL_INSCRIPTION .form .validation label, .TPL_CONNEXION .form .validation label {
+  font-weight: normal;
+}
+.TPL_INSCRIPTION .form .validation label a, .TPL_CONNEXION .form .validation label a {
+  color: #F65149;
+}
+.TPL_INSCRIPTION .form .envoyer, .TPL_CONNEXION .form .envoyer {
+  margin: 35px auto 0;
+}
+.TPL_INSCRIPTION .form .envoyer button, .TPL_CONNEXION .form .envoyer button {
+  padding: 15px 25px;
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: #fff;
+  background: #F65149;
+  border: 2px solid #F65149;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+.TPL_INSCRIPTION .form .envoyer button:hover, .TPL_INSCRIPTION .form .envoyer button:focus, .TPL_INSCRIPTION .form .envoyer button:active, .TPL_CONNEXION .form .envoyer button:hover, .TPL_CONNEXION .form .envoyer button:focus, .TPL_CONNEXION .form .envoyer button:active {
+  cursor: pointer;
+  background: #fff;
+  color: #F65149;
+}
+.TPL_INSCRIPTION .form .inscription, .TPL_CONNEXION .form .inscription {
+  text-align: center;
+  margin-top: 25px;
+}
+
+/*# sourceMappingURL=formulaire.css.map */

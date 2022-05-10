@@ -1,0 +1,99 @@
+/* Variables de couleur */
+$gris: #707070;
+$gris_2: #F5F6F7;
+$red: #F65149;
+
+.TPL_PROFIL {
+    max-width: 800px;
+    margin: 60px auto;
+
+    h1 {
+        text-align: center;
+        position: relative;
+        color: $red;
+        font-size: 35px;
+        margin-bottom: 80px;
+
+        &::after {
+            content: "";
+            width: 100px;
+            height: 2px;
+            background: $red;
+            position: absolute;
+            left: 50%;
+            bottom: -15px;
+            transform: translateX(-50%);
+        }
+    }
+
+    .infos {
+        display: flex;
+        flex-direction: column;
+
+        .infos_haut {
+            display: flex;
+            align-items: center;
+            margin: 0 auto 30px;
+
+            img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 100px;
+            }
+
+            .nom {
+                margin-left: 25px;
+                color: $red;
+
+                p {
+                    margin: 0;
+                }
+
+                #pseudo {
+                    font-weight: 700;
+                    font-size: 26px;
+                    margin-bottom: 5px;
+                }
+
+                .nbImages {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .infos_description {
+            margin: 0 auto 30px;
+            font-size: 18px;
+            font-weight: 500;
+            color: $red;
+
+            #description {
+                font-weight: 300;
+                color: #000;
+            }
+        }
+
+        .modifier {
+            margin: 0 auto;
+
+            button {
+                font-family: Montserrat, sans-serif;
+                padding: 10px 20px;
+                border-radius: 6px;
+                font-size: 16px;
+                font-weight: 700;
+                background: #fff;
+                color: $red;
+                border: 2px solid $red;
+                transition: all 0.3s;
+
+                &:hover {
+                    cursor: pointer;
+                    background: $red;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

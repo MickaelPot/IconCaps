@@ -1,0 +1,86 @@
+/* Variables de couleur */
+.TPL_CHAT {
+  margin: 60px auto;
+  max-width: 800px;
+}
+.TPL_CHAT .userProfile {
+  background: #F65149;
+  border-radius: 6px 6px 0 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.TPL_CHAT .userProfile #imgUser {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 60px;
+  margin-right: 10px;
+}
+.TPL_CHAT .userProfile #pseudoUser {
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+}
+.TPL_CHAT #chat {
+  position: relative;
+  height: 400px;
+  overflow: auto;
+  border: 1px solid #000;
+  border-radius: 0 0 6px 6px;
+  border-top: none;
+}
+.TPL_CHAT #chat .messageUser, .TPL_CHAT #chat .messageMe {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  width: 400px;
+}
+.TPL_CHAT #chat .messageUser p, .TPL_CHAT #chat .messageMe p {
+  font-weight: 500;
+}
+.TPL_CHAT #chat .messageUser {
+  background: #F65149;
+  margin-left: 15px;
+}
+.TPL_CHAT #chat .messageUser p {
+  color: #fff;
+}
+.TPL_CHAT #chat .messageMe {
+  background: #F5F6F7;
+  margin-left: 325px;
+}
+.TPL_CHAT #chat .messageMe p {
+  text-align: right;
+}
+.TPL_CHAT .sendMessage {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.TPL_CHAT .sendMessage textarea {
+  font-family: Montserrat, sans-serif;
+  padding: 10px;
+  width: 400px;
+  margin-right: 10px;
+  border-radius: 6px;
+}
+.TPL_CHAT .sendMessage button {
+  font-family: Montserrat, sans-serif;
+  padding: 10px 30px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  background: #fff;
+  color: #F65149;
+  border: 2px solid #F65149;
+  transition: all 0.3s;
+}
+.TPL_CHAT .sendMessage button:hover {
+  cursor: pointer;
+  background: #F65149;
+  color: #fff;
+}
+
+/*# sourceMappingURL=chat.css.map */

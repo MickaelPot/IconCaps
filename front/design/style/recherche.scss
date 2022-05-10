@@ -1,0 +1,120 @@
+/* Variables de couleur */
+$red: #F65149;
+
+.TPL_RECHERCHE {
+    max-width: 1000px;
+    margin: 30px auto;
+
+    .infosRecherche {
+        display: flex;
+        align-items: center;
+        color: $red;
+        margin-bottom: 50px;
+
+        h1 {
+            margin: 0 15px 0 0;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 80px;
+                height: 2px;
+                background: $red;
+                position: absolute;
+                left: 33%;
+                bottom: -15px;
+                transform: translateX(-50%);
+            }
+        }
+
+        p {
+            margin-top: 22px;
+        }
+    }
+
+    .liste {
+        ul {
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            li {
+                overflow: hidden;
+                position: relative;
+                list-style-type: none;
+                margin-bottom: 30px;
+
+                .utilisateur {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 5px;
+
+                    img {
+                        height: 25px;
+                        width: 25px;
+                        object-fit: cover;
+                        margin-right: 10px;
+                        border-radius: 50px;
+                    }
+
+                    span {
+                        font-size: 12px;
+                        font-weight: 300;
+                    }
+                }
+
+                .imageListe {
+                    overflow: hidden;
+                    display: flex;
+
+                    img {
+                        width: 220px;
+                        height: 300px;
+                        object-fit: cover;
+                        transition: all 0.3s;
+                    }
+                }
+
+                &:hover {
+                    .imageListe img {
+                        transform: scale(1.05);
+                    }
+                }
+
+                .infos {
+                    max-width: 220px;
+
+                    .infos_haut {
+                        display: flex;
+                        justify-content: space-between;
+
+                        p {
+                            font-size: 18px;
+                        }
+
+                        .prix {
+                            margin: 10px 0 0 10px;
+                            font-weight: 600;
+                        }
+
+                        .favoris {
+                            margin: 7px 0 10px;
+                        }
+                    }
+
+                    .description {
+                        margin-left: 10px;
+                        font-size: 14px;
+                    }
+                }
+
+                a {
+                    content: '';
+                    position: absolute;
+                    inset: 0;
+                }
+            }
+        }
+    }
+}

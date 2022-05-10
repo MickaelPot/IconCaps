@@ -1,0 +1,95 @@
+.TPL_MODIFICATION, .TPL_ANNONCE {
+  margin: 60px auto;
+  max-width: 800px;
+}
+.TPL_MODIFICATION h1, .TPL_ANNONCE h1 {
+  margin-bottom: 60px;
+  position: relative;
+  color: #F65149;
+}
+.TPL_MODIFICATION h1::after, .TPL_ANNONCE h1::after {
+  content: "";
+  width: 80px;
+  height: 2px;
+  background: #F65149;
+  position: absolute;
+  left: 5%;
+  bottom: -15px;
+  transform: translateX(-50%);
+}
+.TPL_MODIFICATION .image #createNft, .TPL_ANNONCE .image #createNft {
+  font-family: Montserrat, sans-serif;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  background: #fff;
+  color: #F65149;
+  border: 1px solid #F65149;
+  transition: all 0.3s;
+}
+.TPL_MODIFICATION .image #createNft:hover, .TPL_ANNONCE .image #createNft:hover {
+  cursor: pointer;
+  background: #F65149;
+  color: #fff;
+}
+.TPL_MODIFICATION .image #editeur, .TPL_ANNONCE .image #editeur {
+  display: none;
+}
+.TPL_MODIFICATION .wrapper div, .TPL_ANNONCE .wrapper div {
+  padding: 40px;
+  background: #F5F6F7;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+}
+.TPL_MODIFICATION .wrapper div:last-child, .TPL_ANNONCE .wrapper div:last-child {
+  margin-bottom: 50px;
+}
+.TPL_MODIFICATION .wrapper div label, .TPL_MODIFICATION .wrapper div p, .TPL_ANNONCE .wrapper div label, .TPL_ANNONCE .wrapper div p {
+  font-weight: 500;
+}
+.TPL_MODIFICATION .wrapper div input, .TPL_MODIFICATION .wrapper div textarea, .TPL_ANNONCE .wrapper div input, .TPL_ANNONCE .wrapper div textarea {
+  font-family: Montserrat, sans-serif;
+  border: none;
+  border-radius: 6px;
+  max-width: 300px;
+  width: 100%;
+  padding: 10px;
+}
+.TPL_MODIFICATION .wrapper div.password .changePassword, .TPL_ANNONCE .wrapper div.password .changePassword {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  max-width: 300px;
+  width: 100%;
+}
+.TPL_MODIFICATION .wrapper div.password .changePassword input, .TPL_ANNONCE .wrapper div.password .changePassword input {
+  margin-bottom: 15px;
+}
+.TPL_MODIFICATION .wrapper div.password .changePassword input:last-child, .TPL_ANNONCE .wrapper div.password .changePassword input:last-child {
+  margin-bottom: 0;
+}
+.TPL_MODIFICATION .valider, .TPL_ANNONCE .valider {
+  display: flex;
+  justify-content: center;
+}
+.TPL_MODIFICATION .valider button, .TPL_ANNONCE .valider button {
+  font-family: Montserrat, sans-serif;
+  padding: 15px 25px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  background: #fff;
+  color: #F65149;
+  border: 2px solid #F65149;
+  transition: all 0.3s;
+}
+.TPL_MODIFICATION .valider button:hover, .TPL_ANNONCE .valider button:hover {
+  cursor: pointer;
+  background: #F65149;
+  color: #fff;
+}
